@@ -16,3 +16,23 @@
 .webgl-content .footer .webgl-logo {background-image: url('webgl-logo.png'); width: 204px; float: left;}
 .webgl-content .footer .title {margin-right: 10px; float: right;}
 .webgl-content .footer .fullscreen {background-image: url('fullscreen.png'); width: 38px; float: right;}
+```css
+.webgl-logo {
+    background-image: none !important;
+    width: 180px !important;
+    height: 24px !important;
+    position: relative;
+}
+
+.webgl-logo::after {
+    content: "Ported By Snubs";
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    white-space: nowrap;
+    position: absolute;
+    left: 0;
+    top: 4px;
+}
+```
